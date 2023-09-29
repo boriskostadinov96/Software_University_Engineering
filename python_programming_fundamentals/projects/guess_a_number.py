@@ -1,19 +1,20 @@
 import random
-computer_number = random.randint(1, 100)
+
+computer_choice = random.randint(1, 100)
 
 while True:
-    player_input = input("Guess the number (1-100): ")
-    if not player_input.isdigit():
-        print("Invalid input. Try again...")
+    player_choice = input("Enter your guess: ")
+
+    if not player_choice.isdigit():
+        print("Your guess is not a number. Try again...")
         continue
 
-    player_number = int(player_input)
-    if player_number == computer_number:
-        print("You guess it!")
-        break
-    elif player_number > computer_number:
-        print("Too High!")
+    if int(player_choice) > computer_choice:
+        print("Your guess is higher than the computer's number")
+    elif int(player_choice) < computer_choice:
+        print("Your guess is lower than the computer's number")
     else:
-        print("Too Low!")
+        break
 
+print(f"{computer_choice} is correct!")
 
