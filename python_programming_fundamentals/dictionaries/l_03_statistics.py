@@ -1,16 +1,16 @@
-data = input()
+command = input()
 products = {}
 
-while data != "statistics":
-    key, value = data.split(": ")
-    value = int(value)
+while command != "statistics":
+    key, value = command.split(": ")
 
     if key not in products:
-        products[key] = value
+        products[key] = int(value)
 
     else:
-        products[key] += value
-    data = input()
+        products[key] += int(value)
+
+    command = input()
 
 print("Products in stock:")
 
