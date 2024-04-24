@@ -1,9 +1,9 @@
-elements = input().split()
+food = input().split()
 bakery = {}
 
-for element in range(0, len(elements), 2):
-    key = elements[element]
-    value = elements[element + 1]
-    bakery[key] = int(value)
+for index in range(0, len(food), 2):
+    key = food[index]
+    value = int(food[index + 1])
+    bakery[key] = value
 
 print(bakery)
