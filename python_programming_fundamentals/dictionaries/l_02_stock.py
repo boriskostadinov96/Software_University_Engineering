@@ -1,14 +1,15 @@
-elements = input().split()
+products = input().split()
 bakery = {}
 
-for el in range(0, len(elements), 2):
-    key = elements[el]
-    value = elements[el + 1]
-    bakery[key] = int(value)
+for index in range(0, len(products), 2):
+    key = products[index]
+    value = int(products[index + 1])
+    bakery[key] = value
 
 searched_products = input().split()
+
 for product in searched_products:
-    if product in bakery:
+    if product in bakery.keys():
         print(f"We have {bakery[product]} of {product} left")
 
     else:
