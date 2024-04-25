@@ -1,9 +1,8 @@
-square_meter_for_landscaping = float(input())
+square_meters = float(input())
+yard_price = (square_meters * 7.61)
+discount = yard_price * 0.18
 
-price_for_landscaping_the_whole_yard = square_meter_for_landscaping * 7.61
-discount = price_for_landscaping_the_whole_yard * 0.18
-final_price_for_landscaping = price_for_landscaping_the_whole_yard - discount
+total_price = yard_price - discount
 
-print(f"The final price is: {final_price_for_landscaping} lv.")
+print(f"The final price is: {total_price} lv.")
 print(f"The discount is: {discount} lv.")
-
