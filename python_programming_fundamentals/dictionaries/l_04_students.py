@@ -5,11 +5,13 @@ while ":" in data:
     student_name, student_id, course_name = data.split(":")
     if course_name not in courses:
         courses[course_name] = {student_id: student_name}
+
     else:
         courses[course_name][student_id] = student_name
+
     data = input()
 
-course_name = " ".join(data.split("_"))
+course_name = ' '.join(data.split("_"))
 students = courses[course_name]
 
 for student_id, name in students.items():
