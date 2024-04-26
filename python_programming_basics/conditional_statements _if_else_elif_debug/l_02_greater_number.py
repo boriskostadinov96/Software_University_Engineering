@@ -1,7 +1,8 @@
-first_number = int(input())
-second_number = int(input())
+first_num = int(input())
+second_num = int(input())
 
-if first_number > second_number:
-    print(first_number)
+if first_num > second_num:
+    print(first_num)
+
 else:
-    print(second_number)
+    print(second_num)
