@@ -1,6 +1,7 @@
 from math import pi
+
 figure = input()
-area = 0
+area = ""
 
 if figure == "square":
     a = float(input())
@@ -9,15 +10,18 @@ if figure == "square":
 elif figure == "rectangle":
     a = float(input())
     b = float(input())
+
     area = a * b
 
 elif figure == "circle":
-    radius = float(input())
-    area = pi * (radius ** 2)
+    radios = float(input())
+
+    area = pi * radios ** 2
 
 elif figure == "triangle":
     a = float(input())
     b = float(input())
-    area = 1 / 2 * a * b
 
-print(area)
+    area = a * b / 2
+
+print(f'{area:.3f}')
