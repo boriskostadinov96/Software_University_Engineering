@@ -1,14 +1,6 @@
-day_of_week = input()
-ticked_price = 0
+days_dict = {"Monday": 12, "Tuesday": 12, "Wednesday": 14,
+             "Thursday": 14, "Friday": 12, "Saturday": 16, "Sunday": 16}
+day = input()
 
-if day_of_week == 'Monday' or day_of_week == 'Tuesday' or day_of_week == 'Friday':
-    ticked_price = 12
-    print(ticked_price)
-
-elif day_of_week == 'Wednesday' or day_of_week == 'Thursday':
-    ticked_price = 14
-    print(ticked_price)
-
-elif day_of_week == 'Saturday' or day_of_week == 'Sunday':
-    ticked_price = 16
-    print(ticked_price)
+if day in days_dict:
+    print(days_dict[day])
