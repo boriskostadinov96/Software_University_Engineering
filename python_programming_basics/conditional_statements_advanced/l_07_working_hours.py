@@ -1,12 +1,9 @@
-current_hour = int(input())
-week_day = input()
+hour = int(input())
+day = input()
+working_days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
 
-if week_day == 'Monday' or week_day == 'Tuesday' or week_day == 'Wednesday' or \
-        week_day == 'Thursday' or week_day == 'Friday' or week_day == 'Saturday':
-    if 10 <= current_hour <= 18:
-        print('open')
-    else:
-        print('closed')
+if 10 <= hour <= 18 and day in working_days:
+    print("open")
 
 else:
-    print('closed')
+    print("closed")
