@@ -1,3 +1,4 @@
 number = int(input())
-if number != 0 and number < 100 or number > 200:
-    print('invalid')
+
+if not number != 100 and number != 200 and number != 0:
+    print("invalid")
