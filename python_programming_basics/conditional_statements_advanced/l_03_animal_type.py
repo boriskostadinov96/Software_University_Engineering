@@ -1,11 +1,11 @@
-animal_type = input()
-if animal_type == 'dog':
-    print('mammal')
-elif animal_type == 'crocodile':
-    print('reptile')
-elif animal_type == 'tortoise':
-    print('reptile')
-elif animal_type == 'snake':
-    print('reptile')
+animal = input()
+reptiles = ["crocodile", "tortoise", "snake"]
+
+if animal == "dog":
+    print("mammal")
+
+elif animal in reptiles:
+    print("reptile")
+
 else:
-    print('unknown')
+    print("unknown")
