@@ -1,10 +1,12 @@
-product_name = input()
-if product_name == 'banana' or product_name == 'apple' or product_name == 'kiwi' \
-        or product_name == 'cherry' or product_name == 'lemon' or product_name == 'grapes':
-    print('fruit')
+fruits = ["banana", "apple", "kiwi", "cherry", "lemon", "grapes"]
+vegetables = ["tomato", "cucumber", "pepper", "carrot"]
+product = input()
 
-elif product_name == 'tomato' or product_name == 'cucumber' \
-      or product_name == 'pepper' or product_name == 'carrot':
-    print('vegetable')
+if product in fruits:
+    print("fruit")
+
+elif product in vegetables:
+    print("vegetable")
+
 else:
-    print('unknown')
+    print("unknown")
