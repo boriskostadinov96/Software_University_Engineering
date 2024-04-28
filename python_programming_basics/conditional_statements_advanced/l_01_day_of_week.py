@@ -1,17 +1,25 @@
 number = int(input())
+
 if number == 1:
-    print('Monday')
+    print("Monday")
+
 elif number == 2:
-    print('Tuesday')
+    print("Tuesday")
+
 elif number == 3:
-    print('Wednesday')
+    print("Wednesday")
+
 elif number == 4:
-    print('Thursday')
+    print("Thursday")
+
 elif number == 5:
-    print('Friday')
+    print("Friday")
+
 elif number == 6:
-    print('Saturday')
+    print("Saturday")
+
 elif number == 7:
-    print('Sunday')
+    print("Sunday")
+
 else:
-    print('Error')
+    print("Error")
