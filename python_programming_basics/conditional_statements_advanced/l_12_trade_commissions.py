@@ -1,7 +1,6 @@
 town = input()
 sales = float(input())
 result = 0
-wrong_data = False
 
 if town == "Sofia":
     if 0 <= sales <= 500:
@@ -16,9 +15,6 @@ if town == "Sofia":
     elif sales > 10000:
         result = sales * 0.12
 
-    else:
-        wrong_data = True
-
 elif town == "Varna":
     if 0 <= sales <= 500:
         result = sales * 0.045
@@ -31,9 +27,6 @@ elif town == "Varna":
 
     elif sales > 10000:
         result = sales * 0.13
-
-    else:
-        wrong_data = True
 
 elif town == "Plovdiv":
     if 0 <= sales <= 500:
@@ -48,13 +41,7 @@ elif town == "Plovdiv":
     elif sales > 10000:
         result = sales * 0.145
 
-    else:
-        wrong_data = True
-
-else:
-    wrong_data = True
-
-if wrong_data:
+if result == 0:
     print("error")
 
 else:
