@@ -1,16 +1,20 @@
-line = input()
-sum_vowels = 0
+text = input()
+points = 0
 
-for c in line:
-    if c == 'a':
-        sum_vowels += 1
-    elif c == 'e':
-        sum_vowels += 2
-    elif c == 'i':
-        sum_vowels += 3
-    elif c == 'o':
-        sum_vowels += 4
-    elif c == 'u':
-        sum_vowels += 5
+for letter in text:
+    if letter == "a":
+        points += 1
 
-print(sum_vowels)
+    elif letter == "e":
+        points += 2
+
+    elif letter == "i":
+        points += 3
+
+    elif letter == "o":
+        points += 4
+
+    elif letter == "u":
+        points += 5
+
+print(points)
