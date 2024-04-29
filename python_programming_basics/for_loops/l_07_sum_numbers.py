@@ -1,8 +1,8 @@
 n = int(input())
-total_sum = 0
+result = 0
 
 for _ in range(n):
-    current_number = int(input())
-    total_sum += current_number
+    number = int(input())
+    result += number
 
-print(total_sum)
+print(result)
