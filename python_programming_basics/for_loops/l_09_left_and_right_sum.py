@@ -1,18 +1,18 @@
-n_number = int(input())
-
+numbers = int(input())
 left_sum = 0
 right_sum = 0
 
-for i in range(n_number):
-    enter_left = int(input())
-    left_sum += enter_left
+for _ in range(numbers):
+    left_nums = int(input())
+    left_sum += left_nums
 
-for i in range(n_number):
-    enter_right = int(input())
-    right_sum += enter_right
+
+for _ in range(numbers):
+    right_nums = int(input())
+    right_sum += right_nums
 
 if left_sum == right_sum:
     print(f"Yes, sum = {left_sum}")
+
 else:
-    diff = abs(left_sum - right_sum)
-    print(f"No, diff = {diff}")
+    print(f"No, diff = {abs(left_sum - right_sum)}")
