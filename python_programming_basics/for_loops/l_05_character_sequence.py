@@ -1,4 +1,4 @@
-word = input()
+text = input()
 
-for character in word:
-    print(character)
+for symbol in text:
+    print(symbol)
