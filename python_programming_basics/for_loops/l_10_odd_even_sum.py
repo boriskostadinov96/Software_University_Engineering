@@ -1,19 +1,18 @@
-number = int(input())
-odd_sum = 0
+numbers = int(input())
 even_sum = 0
+odd_sum = 0
 
-for i in range(1, number + 1):
-    current_number = int(input())
+for num in range(numbers):
+    i = int(input())
 
-    if i % 2 == 0:
-        even_sum += current_number
+    if num % 2 == 0:
+        even_sum += i
+
     else:
-        odd_sum += current_number
+        odd_sum += i
 
-if odd_sum == even_sum:
-    print(f'Yes')
-    print(f'Sum = {odd_sum}')
+if even_sum == odd_sum:
+    print(f"Yes\nSum = {even_sum}")
+
 else:
-    diff_number = abs(odd_sum - even_sum)
-    print('No')
-    print(f'Diff = {diff_number}')
+    print(f"No\nDiff = {abs(even_sum - odd_sum)}")
