@@ -1,10 +1,23 @@
-BASE_NUMBER = int(input())
-sum_numbers = 0
+number = int(input())
+total_sum = 0
 
-while True:
-    current_number = int(input())
-    sum_numbers += current_number
+while total_sum < number:
+    some_numbers = int(input())
+    total_sum += some_numbers
 
-    if sum_numbers >= BASE_NUMBER:
-        print(sum_numbers)
-        break
+    if total_sum >= number:
+        print(total_sum)
+
+
+# solution 2
+# number = int(input())
+# number_sum = 0
+#
+# while True:
+#     some_numbers = int(input())
+#     number_sum += some_numbers
+#
+#     if number_sum >= number:
+#         break
+#
+# print(number_sum)
