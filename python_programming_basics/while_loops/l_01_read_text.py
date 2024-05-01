@@ -1,5 +1,5 @@
-word = input()
+text = input()
 
-while word != 'Stop':
-    print(word)
-    word = input()
+while text != "Stop":
+    print(text)
+    text = input()
