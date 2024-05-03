@@ -1,15 +1,12 @@
-min_number = 0
-first_input = True
+command = input()
+min_number = float("inf")
 
-while True:
-    user_input = input()
+while command != "Stop":
+    current_number = int(command)
 
-    if user_input == "Stop":
-        break
+    if current_number < min_number:
+        min_number = current_number
 
-    number = int(user_input)
-    if first_input or number < min_number:
-        min_number = number
-        first_input = False
+    command = input()
 
 print(min_number)
