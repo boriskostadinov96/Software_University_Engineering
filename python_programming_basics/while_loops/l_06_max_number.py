@@ -1,13 +1,29 @@
-max_number = 0
+command = input()
+max_number = int(command)
 
-while True:
-    user_input = input()
+while command != "Stop":
+    number = int(command)
 
-    if user_input == "Stop":
-        break
-
-    number = int(user_input)
     if number > max_number:
         max_number = number
 
+    command = input()
+
 print(max_number)
+
+
+# solution 2
+# from math import inf
+#
+# command = input()
+# max_number = -inf
+#
+# while command != "Stop":
+#     current_number = int(command)
+#
+#     if current_number > max_number:
+#         max_number = current_number
+#
+#     command = input()
+#
+# print(max_number)
