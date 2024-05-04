@@ -1,20 +1,24 @@
-start_interval = int(input())
-final_interval = int(input())
-magic_number = int(input())
-combination_counter = 0
-break_condition = False
+start_num = int(input())
+end_num = int(input())
+magic_num = int(input())
+counter = 0
+is_equal = False
 
-for x in range(start_interval, final_interval + 1):
-    for y in range(start_interval, final_interval + 1):
-        combination_counter += 1
+for first_combination in range(start_num, end_num + 1):
+    for second_combination in range(start_num, end_num + 1):
+        counter += 1
 
-        if x + y == magic_number:
-            print(f"Combination N:{combination_counter} ({x} + {y} = {magic_number})")
-            break_condition = True
+        if first_combination + second_combination == magic_num:
+            is_equal = True
             break
 
-    if break_condition:
+    if is_equal:
         break
 
+if is_equal:
+    print(f"Combination N:{counter} ({first_combination} + {second_combination} = {magic_num})")
+
 else:
-    print(f"{combination_counter} combinations - neither equals {magic_number}")
+    print(f"{counter} combinations - neither equals {magic_num}")
+
+
