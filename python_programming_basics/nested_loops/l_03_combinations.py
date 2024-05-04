@@ -1,9 +1,11 @@
-n = int(input())
-combination_counter = 0
+number = int(input())
+valid_combinations = 0
 
-for x1 in range (n + 1):
-    for x2 in range (n + 1):
-        for x3 in range (n + 1):
-            if x1 + x2 + x3 == n:
-                combination_counter += 1
-print(combination_counter)
+for first_num in range(0, number + 1):
+    for second_num in range(0, number + 1):
+        for third_num in range(0, number + 1):
+            result = first_num + second_num + third_num
+            if result == number:
+                valid_combinations += 1
+
+print(valid_combinations)
