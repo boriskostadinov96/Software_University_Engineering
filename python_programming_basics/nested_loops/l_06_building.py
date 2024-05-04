@@ -1,15 +1,17 @@
-floors = int(input())
-rooms_per_floor = int(input())
+floors_count = int(input())
+rooms_count = int(input())
+floor_type = ""
 
-for floor in reversed(range(1, floors + 1)):
+for current_floor in range(floors_count, 0, -1):
+    if current_floor == floors_count:
+        floor_type = "L"
 
-    room_type = "A" if floor % 2 else "0"
+    elif current_floor % 2 == 0:
+        floor_type = "O"
 
-    if floor == floors:
-        room_type = 'L'
+    else:
+        floor_type = "A"
 
-    for room in range(rooms_per_floor):
-        room_name = f"{room_type}{floor}{room}"
-        print(room_name, end=' ')
-
+    for current_room in range(rooms_count):
+        print(f"{floor_type}{current_floor}{current_room}", end=" ")
     print()
