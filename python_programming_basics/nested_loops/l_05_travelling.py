@@ -1,12 +1,13 @@
 destination = input()
 
 while destination != "End":
-    budget = float(input())
-    saved_money = 0
+    needed_money = float(input())
+    total_money = 0
 
-    while saved_money < budget:
-        money = float(input())
-        saved_money += money
+    while needed_money > total_money:
+        saved_money = float(input())
+        total_money += saved_money
 
     print(f"Going to {destination}!")
     destination = input()
+
