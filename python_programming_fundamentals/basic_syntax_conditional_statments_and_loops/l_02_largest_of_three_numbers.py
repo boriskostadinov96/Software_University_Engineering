@@ -1,10 +1,12 @@
-number_one = int(input())
-number_two = int(input())
-number_three = int(input())
+first_num = int(input())
+second_num = int(input())
+third_num = int(input())
 
-if number_one > number_two and number_one > number_three:
-    print(number_one)
-elif number_two > number_one and number_two > number_three:
-    print(number_two)
+if first_num > second_num and first_num > third_num:
+    print(first_num)
+
+elif second_num > first_num and second_num > third_num:
+    print(second_num)
+
 else:
-    print(number_three)
+    print(third_num)
