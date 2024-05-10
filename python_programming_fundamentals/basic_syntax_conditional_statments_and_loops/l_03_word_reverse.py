@@ -1,18 +1,17 @@
 word = input()
-reversed_word = ""
+print(word[::-1])
 
-for i in range(len(word) -1, -1, -1):
-    reversed_word += word[i]
-print(reversed_word)
-
-# Second way:
-#
+# solution 2
 # word = input()
-# print(word[::-1])
-
-# Third way:
+# reversed_word = ""
 #
-# word = input()
-# for index in range(len(word)-1, -1, -1):
-#     print(word[index], end= "")
+# for letter in reversed(word):
+#     reversed_word += letter
+#
+# print(reversed_word)
 
+# solution 3
+# word = input()
+#
+# for index in range(len(word) - 1, -1, -1):
+#     print(word[index], end="")
