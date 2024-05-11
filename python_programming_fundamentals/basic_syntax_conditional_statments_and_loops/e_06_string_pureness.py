@@ -1,9 +1,10 @@
-number_of_string = int(input())
+strings_count = int(input())
 
-for current_string in range(number_of_string):
-    pure_or_not_string = input()
-    if "," in pure_or_not_string or "." in pure_or_not_string or "_" in pure_or_not_string:
-        print(f'{pure_or_not_string} is not pure!')
+for _ in range(strings_count):
+    current_str = input()
+
+    if "," in current_str or "." in current_str or "_" in current_str:
+        print(f"{current_str} is not pure!")
 
     else:
-        print(f'{pure_or_not_string} is pure.')
+        print(f"{current_str} is pure.")
