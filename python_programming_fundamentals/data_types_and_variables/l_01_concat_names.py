@@ -1,10 +1,5 @@
-name_one = input()
-name_two = input()
+first_name = input()
+second_name = input()
 delimiter = input()
-print(f'{name_one}{delimiter}{name_two}')
 
-# name1 = input()
-# name2 = input()
-# delimiter = input()
-#
-# print(name1 + delimiter + name2)
+print(f"{first_name}{delimiter}{second_name}")
