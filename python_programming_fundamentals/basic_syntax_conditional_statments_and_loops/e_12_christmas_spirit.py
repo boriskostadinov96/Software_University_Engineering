@@ -1,29 +1,34 @@
-quantity_of_decorations = int(input())
-remaining_days = int(input())
-ornament_set_price = 2
-tree_skirt_price = 5
-tree_garland_price = 3
-tree_lights_price = 15
-total_spirit = 0
-total_cost = 0
-for current_day in range(1, remaining_days + 1):
+decorations_quantity = int(input())
+days_left = int(input())
+budget = 0
+spirit_points = 0
+
+for current_day in range(1, days_left + 1):
+
     if current_day % 11 == 0:
-        quantity_of_decorations += 2
+        decorations_quantity += 2
+
     if current_day % 2 == 0:
-        total_cost += quantity_of_decorations * ornament_set_price
-        total_spirit += 5
+        budget += decorations_quantity * 2
+        spirit_points += 5
+
     if current_day % 3 == 0:
-        total_cost += quantity_of_decorations * (tree_skirt_price + tree_garland_price)
-        total_spirit += 10 + 3
+        budget += decorations_quantity * 8
+        spirit_points += 13
+
     if current_day % 5 == 0:
-        total_cost += quantity_of_decorations * tree_lights_price
-        total_spirit += 17
+        budget += decorations_quantity * 15
+        spirit_points += 17
+
         if current_day % 3 == 0:
-            total_spirit += 30
+            spirit_points += 30
+
     if current_day % 10 == 0:
-        total_spirit -= 20
-        total_cost += tree_skirt_price + tree_garland_price + tree_lights_price
-if remaining_days % 10 == 0:
-    total_spirit -= 30
-print(f"Total cost: {total_cost}")
-print(f"Total spirit: {total_spirit}")
+        spirit_points -= 20
+        budget += 23
+
+if days_left % 10 == 0:
+    spirit_points -= 30
+
+print(f"Total cost: {budget}")
+print(f"Total spirit: {spirit_points}")
