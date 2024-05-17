@@ -1,0 +1,1 @@
+DROP DATABASE minios_db WITH (FORCE);
