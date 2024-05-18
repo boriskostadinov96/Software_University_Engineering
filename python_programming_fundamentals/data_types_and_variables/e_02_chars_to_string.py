@@ -1,5 +1,5 @@
-character_one = input()
-character_two = input()
-character_three = input()
-final_string = character_one + character_two + character_three
-print(f'{final_string}')
+first_character = input()
+second_character = input()
+third_character = input()
+
+print(f"{first_character}{second_character}{third_character}")
