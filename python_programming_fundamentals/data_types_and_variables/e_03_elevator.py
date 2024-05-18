@@ -1,16 +1,8 @@
-# from math import ceil
-#
-# people_number = int(input())
-# capacity = int(input())
-#
-# courses = ceil(people_number / capacity)
-# print(courses)
+import math
 
-persons = int(input())
+number_of_people = int(input())
 capacity = int(input())
-courses = 0
 
-while persons > 0:
-    persons -= capacity
-    courses += 1
+
+courses = math.ceil(number_of_people / capacity)
 print(courses)
