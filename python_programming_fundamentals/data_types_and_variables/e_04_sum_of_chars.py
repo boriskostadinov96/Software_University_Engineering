@@ -1,7 +1,8 @@
-number_of_characters = int(input())
-total_sum = 0
+lines = int(input())
+letters_sum = 0
 
-for character in range(number_of_characters):
-    letter = input()
-    total_sum += ord(letter)
-print(f"The sum equals: {total_sum}")
+for _ in range(lines):
+    current_letter = input()
+    letters_sum += ord(current_letter)
+
+print(f"The sum equals: {letters_sum}")
