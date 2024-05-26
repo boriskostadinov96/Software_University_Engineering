@@ -1,28 +1,32 @@
-number = int(input())
-even_nums = []
-odd_nums = []
-positive_nums = []
-negative_nums = []
+lines = int(input())
+even_numbers = []
+odd_numbers = []
+negative_numbers = []
+positive_numbers = []
 
-for _ in range(number):
+for _ in range(lines):
     current_number = int(input())
 
-    if current_number >= 0:
-        positive_nums.append(current_number)
-    else:
-        negative_nums.append(current_number)
-
     if current_number % 2 == 0:
-        even_nums.append(current_number)
+        even_numbers.append(current_number)
     else:
-        odd_nums.append(current_number)
+        odd_numbers.append(current_number)
+
+    if current_number >= 0:
+        positive_numbers.append(current_number)
+    else:
+        negative_numbers.append(current_number)
 
 command = input()
-if command == 'positive':
-    print(positive_nums)
-elif command == 'negative':
-    print(negative_nums)
+
+if command == 'negative':
+    print(negative_numbers)
+
+elif command == 'positive':
+    print(positive_numbers)
+
+elif command == 'odd':
+    print(odd_numbers)
+
 elif command == 'even':
-    print(even_nums)
-else:
-    print(odd_nums)
+    print(even_numbers)
