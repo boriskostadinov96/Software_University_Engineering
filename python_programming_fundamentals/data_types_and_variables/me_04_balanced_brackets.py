@@ -1,9 +1,12 @@
-number_of_lines = int(input())
+lines = int(input())
 counter = 0
-for brackets in range(number_of_lines):
+
+for _ in range(lines):
     current_command = input()
+
     if "(" in current_command:
         counter += 1
+
     elif ")" in current_command:
         counter -= 1
 
