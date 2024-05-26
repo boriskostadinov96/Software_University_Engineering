@@ -1,15 +1,5 @@
-first_number = int(input())
-second_number = int(input())
+first_num = int(input())
+second_num = int(input())
 
-print('Before:')
-print(f'a = {first_number}')
-print(f'b = {second_number}')
-
-temp = first_number
-first_number = second_number
-second_number = temp
-
-print('After:')
-print(f'a = {first_number}')
-print(f'b = {second_number}')
-
+print(f"Before:\na = {first_num}\nb = {second_num}")
+print(f"After:\na = {second_num}\nb = {first_num}")
