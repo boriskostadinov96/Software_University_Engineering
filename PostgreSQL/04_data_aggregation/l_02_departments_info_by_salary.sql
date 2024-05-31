@@ -4,4 +4,4 @@ SELECT
 FROM 
 	employees
 GROUP BY department_id
-ORDER BY department
+ORDER BY department_id
