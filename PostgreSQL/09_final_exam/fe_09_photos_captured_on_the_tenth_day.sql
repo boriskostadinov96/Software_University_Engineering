@@ -1,6 +1,6 @@
 SELECT
-    LEFT(description, 10) || '...' AS summary,
-    TO_CHAR(capture_date, 'DD.MM HH24:MI') AS date
+    LEFT(description || '...', 10) AS summary,
+    TO_CHAR(capture_date, 'DD.MM HH24:MI')
 FROM
     photos
 WHERE
