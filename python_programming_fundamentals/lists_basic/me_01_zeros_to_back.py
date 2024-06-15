@@ -1,9 +1,15 @@
-list_of_numbers = input().split(', ')
+numbers = [int(x) for x in input().split(', ')]
 
-for number in list_of_numbers:
-    if number == "0":
-        list_of_numbers.remove(number)
-        list_of_numbers.append(number)
-list_of_integers = [int(x) for x in list_of_numbers]
+for num in numbers:
+    if num == 0:
+        numbers.remove(num)
+        numbers.append(num)
 
-print(list_of_integers)
+print(numbers)
+
+# solution 2
+# number_as_string = input().split(", ")
+# list_of_zeros = [int(number_as_string[i]) for i in range(len(number_as_string)) if int(number_as_string[i]) == 0]
+# list_without_zeros = [int(number_as_string[i]) for i in range(len(number_as_string)) if int(number_as_string[i]) != 0]
+# combined_lists = list_without_zeros + list_of_zeros
+# print(combined_lists)
