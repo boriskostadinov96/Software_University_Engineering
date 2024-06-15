@@ -52,3 +52,26 @@ else:
 #     print(f"The winner is left with total time: {left_player_time:.1f}")
 # else:
 #     print(f"The winner is right with total time: {right_player_time:.1f}")
+
+# solution 3
+# car_times = [int(x) for x in input().split()]
+#
+# finish_line = len(car_times) // 2
+#
+# left_racer_time = 0
+# right_racer_time = 0
+# 
+# for idx in range(finish_line):
+#     if car_times[idx] == 0:
+#         left_racer_time *= 0.8
+#     left_racer_time += car_times[idx]
+#
+# for idx in range(len(car_times) - 1, finish_line, -1):
+#     if car_times[idx] == 0:
+#         right_racer_time *= 0.8
+#     right_racer_time += car_times[idx]
+#
+# if left_racer_time < right_racer_time:
+#     print(f"The winner is left with total time: {left_racer_time:.1f}")
+# else:
+#     print(f"The winner is right with total time: {right_racer_time:.1f}")
