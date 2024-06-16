@@ -1,9 +1,14 @@
-string_as_nums = input().split()
-list_of_rounded_nums = []
+def rounding_numbers(nums):
+    result = []
 
-for x in string_as_nums:
-    # Преобразуваме низа x към float и след това го закръгляме
-    rounded_num = round(float(x))
-    list_of_rounded_nums.append(rounded_num)
+    for num in nums:
+        result.append(round(num))
 
-print(list_of_rounded_nums)
+    return result
+
+
+numbers = [float(x) for x in input().split()]
+print(rounding_numbers(numbers))
+
+# solution 2 without function
+# print([round(float(x)) for x in input().split()])
