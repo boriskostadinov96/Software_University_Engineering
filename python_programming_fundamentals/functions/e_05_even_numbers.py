@@ -22,3 +22,7 @@ print(find_even_numbers(nums))
 #
 # result = list(filter(is_even, numbers_as_digits))
 # print(result)
+
+
+# solution 3
+# integers = print([int(x) for x in input().split() if int(x) % 2 == 0])
