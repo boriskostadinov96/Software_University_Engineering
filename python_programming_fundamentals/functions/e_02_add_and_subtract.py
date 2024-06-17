@@ -1,19 +1,20 @@
-def sum_numbers(num_one, num_two):
-    sum_of_two_nums = num_one + num_two
-    return sum_of_two_nums
+def sum_numbers(first_num, second_num):
+    return first_num + second_num
 
 
-def subtract(result, num_three):
-    return result - num_three
+def subtract(result, third_num):
+    return result - third_num
 
 
-def add_and_subtract(num_one, num_two, num_three):
-    returned_result = sum_numbers(num_one, num_two)
-    final_result = subtract(returned_result, num_three)
+def add_and_subtract(first_num, second_num, third_num):
+    returned_result = sum_numbers(first_num, second_num)
+    final_result = subtract(returned_result, third_num)
+
     return final_result
 
 
-first_num = int(input())
-second_num = int(input())
-third_num = int(input())
-print(add_and_subtract(first_num, second_num, third_num))
+a = int(input())
+b = int(input())
+c = int(input())
+
+print(add_and_subtract(a, b, c))
