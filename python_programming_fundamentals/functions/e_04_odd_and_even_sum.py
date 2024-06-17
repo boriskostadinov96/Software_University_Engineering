@@ -1,14 +1,18 @@
-def odd_even_sums(some_number: str):
-    sum_of_even = 0
-    sum_of_odd = 0
-    for digit in some_number:
-        if int(digit) % 2 == 0:
-            sum_of_even += int(digit)
+def odd_even_digits_sum(num):
+    even_sum = 0
+    odd_sum = 0
+
+    for digit in num:
+        digit = int(digit)
+
+        if digit % 2 == 0:
+            even_sum += digit
+
         else:
-            sum_of_odd += int(digit)
-    return sum_of_odd, sum_of_even
+            odd_sum += digit
+
+    print(f"Odd sum = {odd_sum}, Even sum = {even_sum}")
 
 
 number = input()
-sum_of_odd_digits, sum_of_even_digits = odd_even_sums(number)
-print(f"Odd sum = {sum_of_odd_digits}, Even sum = {sum_of_even_digits}")
+odd_even_digits_sum(number)
