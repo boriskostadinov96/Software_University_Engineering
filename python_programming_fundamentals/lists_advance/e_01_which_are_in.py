@@ -1,9 +1,11 @@
-first_sequence = input().split(", ")
-second_sequence = input().split(", ")
+first_sequence = input().split(', ')
+second_sequence = input().split(', ')
 substrings = []
-for first_string in first_sequence:
-    for second_string in second_sequence:
-        if first_string in second_string:
-            substrings.append(first_string)
+
+for s1 in first_sequence:
+    for s2 in second_sequence:
+        if s1 in s2:
+            substrings.append(s1)
             break
+
 print(substrings)
