@@ -1,13 +1,18 @@
-number_of_electrons = int(input())
+electrons = int(input())
 shells = []
-for shell in range(1, number_of_electrons + 1):
-    max_electrons_in_current_shell = 2 * shell ** 2
-    if number_of_electrons >= max_electrons_in_current_shell:
-        shells.append(max_electrons_in_current_shell)
-        number_of_electrons -= max_electrons_in_current_shell
-        if number_of_electrons == 0:
+
+for shell in range(1, electrons + 1):
+    max_electrons = 2 * shell ** 2
+
+    if electrons >= max_electrons:
+        shells.append(max_electrons)
+        electrons -= max_electrons
+
+        if electrons == 0:
             break
+
     else:
-        shells.append(number_of_electrons)
+        shells.append(electrons)
         break
+
 print(shells)
