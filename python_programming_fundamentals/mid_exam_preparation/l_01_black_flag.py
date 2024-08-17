@@ -1,6 +1,6 @@
 attacking_days = int(input())
 daily_plunder = int(input())
-expected_plunder = int(input())
+expected_plunder = float(input())
 total_plunder = 0
 
 for current_day in range(1, attacking_days + 1):
@@ -18,4 +18,3 @@ if total_plunder >= expected_plunder:
 else:
     percentage_collected = (total_plunder / expected_plunder) * 100
     print(f"Collected only {percentage_collected:.2f}% of the plunder.")
-
