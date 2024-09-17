@@ -1,9 +1,9 @@
 function solve(length, width, height, percentage) {
     let area = length * width * height;
     let areaPercentage = area / 1000;
-    coveredSpace = percentage /100;
+    let coveredSpace = percentage /100;
 
-    result = areaPercentage * (1 - coveredSpace);
+    let result = areaPercentage * (1 - coveredSpace);
     console.log(result);
 }
 
