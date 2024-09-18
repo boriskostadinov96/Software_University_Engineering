@@ -6,5 +6,5 @@ for index in range(len(algebraic_expression)):
         parentheses.append(index)
 
     elif algebraic_expression[index] == ")":
-        start_index = parentheses.pop()
-        print(algebraic_expression[start_index:index+1])
+        last_parentheses = parentheses.pop()
+        print(algebraic_expression[last_parentheses:index+1])
