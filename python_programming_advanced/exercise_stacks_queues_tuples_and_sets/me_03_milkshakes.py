@@ -11,9 +11,11 @@ while milkshakes != 5 and chocolates and cups_of_milk:
 
     if chocolate <= 0 and cup_of_milk <= 0:
         continue
+
     elif chocolate <= 0:
         cups_of_milk.appendleft(cup_of_milk)
         continue
+
     elif cup_of_milk <= 0:
         chocolates.append(chocolate)
         continue
