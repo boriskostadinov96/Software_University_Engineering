@@ -1,13 +1,10 @@
-from typing import List
-
-
 class Vet:
-    animals: List[str] = []
-    space: int = 5
+    animals = []
+    space = 5
 
     def __init__(self, vet_name: str):
         self.name = vet_name
-        self.animals: List[str] = []
+        self.animals = []
 
     def register_animal(self, animal_name: str) -> str:
         if len(Vet.animals) == Vet.space:
