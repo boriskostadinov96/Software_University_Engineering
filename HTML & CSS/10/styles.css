@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    background-color: #8B0000;
+}
+
+* {
+    text-align: center;
+}
+
+section h1 {
+    color: white;
+    font-family: "Anton", serif;
+    font-size: 50px;
+}
+
+section h2 {
+    color: #DB8B39;
+}
+
+p {
+    color: white;
+    font-family: "Open Sans", serif;
+}
