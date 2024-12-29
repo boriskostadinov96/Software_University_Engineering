@@ -1,0 +1,23 @@
+.buttons-container {
+    margin-top: 40px;
+}
+
+.btn {
+    padding: 6px 12px;
+    color: white;
+    border-radius: 2px; 
+}
+
+.btn-click-me {
+    background-color: #008000;
+    border: 2px solid #008000;
+    display: block;
+    cursor: pointer;
+    
+}
+
+.btn-email-me {
+    background-color: #FFA500;
+    border: 2px solid #FFA500;
+    cursor: pointer;
+}
