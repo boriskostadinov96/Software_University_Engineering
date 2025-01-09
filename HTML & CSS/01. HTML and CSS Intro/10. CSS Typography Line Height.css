@@ -1,0 +1,14 @@
+body {
+    background-color: aqua;
+}
+
+p.void {
+    line-height: 1.5;
+    color: blueviolet;
+    border-style: solid;
+    border-color: azure;
+}
+
+p.spaced {
+    line-height: 2;
+}
