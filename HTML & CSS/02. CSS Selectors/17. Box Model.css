@@ -1,0 +1,12 @@
+.box {
+    margin: 20px; /* Space outside the border */
+    border: 5px solid #007BFF; /* Width, style, and color of the border */
+    padding: 15px; /* Space between the content and the border */
+    width: 200px; /* Width of the content area */
+    height: 100px; /* Height of the content area */
+    background-color: #e6f7ff; /* Background color of the content area */
+    color: #333; /* Text color */
+    text-align: center; /* Center-align the text */
+    line-height: 100px; /* Vertically center the text for this height */
+    box-sizing: border-box; /* Includes padding and border in the total width and height */
+}
