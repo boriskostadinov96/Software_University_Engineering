@@ -1,0 +1,25 @@
+.block {
+    display: block; /* Block element takes up the full width of its container */
+    background-color: #f9c2c2;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #f00;
+    text-align: center; 
+}
+
+.inline {
+    display: inline; /* Inline element takes up only as much width as its content */
+    background-color: #c2f9c2;
+    padding: 5px;
+    margin: 0;
+    border: 1px solid #0f0;
+}
+
+.inline-block {
+    display: inline-block; /* Inline-block element behaves like an inline element but respects block properties */
+    background-color: #c2c2f9;
+    padding: 10px;
+    margin: 10px 5px;
+    border: 1px solid #00f;
+    text-align: center;
+}
