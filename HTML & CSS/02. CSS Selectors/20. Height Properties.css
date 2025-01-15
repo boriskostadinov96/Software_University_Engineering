@@ -1,0 +1,12 @@
+.height-example {
+    height: 50vh; /* Element height is 50% of the viewport height */
+    min-height: 150px; /* Ensures the element is at least 150px tall */
+    max-height: 400px; /* Ensures the element is no taller than 400px */
+    padding: 10px;
+    margin: 20px auto; /* Centers the div horizontally */
+    background-color: #e0f7fa;
+    text-align: center;
+    border: 2px solid #00bcd4;
+    box-sizing: border-box; /* Includes padding and border in the height calculation */
+    overflow: auto; /* Adds scrollbars if content overflows */
+}
