@@ -1,0 +1,11 @@
+.width-example {
+    width: 50%; /* Element takes 50% of its parent's width */
+    min-width: 300px; /* Ensures the element is at least 300px wide */
+    max-width: 800px; /* Ensures the element is no wider than 800px */
+    padding: 10px;
+    margin: 0 auto; /* Centers the div horizontally */
+    background-color: #f0f0f0;
+    text-align: center;
+    border: 2px solid #ccc;
+    box-sizing: border-box; /* Includes padding and border in the width calculation */
+}
