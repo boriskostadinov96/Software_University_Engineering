@@ -1,0 +1,45 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: grid;
+}
+
+header, footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+main {
+    background-color: #f4f4f4;
+    padding: 10px;
+}
+
+.box {
+    background-color: #ddd;
+    padding: 20px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+/* •For screens wider than 1200px, the layout should be a three-column grid.
+•	For screens between 600px and 1200px, the layout should switch to a two-column grid.
+•	For screens narrower than 600px, the layout should use a single-column flexbox layout. default */
+
+@media (min-width: 600px) {
+    .container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
